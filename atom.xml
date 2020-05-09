@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujie2021.github.io/"/>
-  <updated>2020-05-09T07:16:53.939Z</updated>
+  <updated>2020-05-09T08:25:28.218Z</updated>
   <id>http://liujie2021.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怀化学院java考试大纲</title>
+    <link href="http://liujie2021.github.io/2020/050960104.html"/>
+    <id>http://liujie2021.github.io/2020/050960104.html</id>
+    <published>2020-05-09T08:23:36.000Z</published>
+    <updated>2020-05-09T08:25:28.218Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;怀化学院java考试大纲&lt;/center&gt;
+
+
+&lt;br&gt;
+
+
+
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;/medias/videos/2.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="java考试大纲" scheme="http://liujie2021.github.io/categories/java%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/"/>
+    
+    
+      <category term="Java" scheme="http://liujie2021.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>java面向对象之封装</title>
@@ -118,7 +154,7 @@
     <link href="http://liujie2021.github.io/2020/050816107.html"/>
     <id>http://liujie2021.github.io/2020/050816107.html</id>
     <published>2020-05-08T02:00:49.008Z</published>
-    <updated>2020-05-08T07:08:16.548Z</updated>
+    <updated>2020-05-09T08:38:22.477Z</updated>
     
     <summary type="html">
     
