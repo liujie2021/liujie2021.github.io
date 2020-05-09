@@ -266,7 +266,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #51ADCC 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -2149,4 +2149,22 @@ footer .copy-right {
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+/*哔哩哔哩视频适配*/
+
+.bilibili {
+    position: relative;
+    width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    .bilibili {height: 15em;max-width: 25em;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bilibili {height: 20em;max-width: 30em;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bilibili {height: 30em;max-width: 40em;}
+}
+@media only screen and (min-width: 1200px) {
+    .bilibili {height: 40em;max-width: 50em;}
 }

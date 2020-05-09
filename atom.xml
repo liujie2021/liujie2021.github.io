@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujie2021.github.io/"/>
-  <updated>2020-05-08T07:08:16.548Z</updated>
+  <updated>2020-05-09T02:34:41.811Z</updated>
   <id>http://liujie2021.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java面向对象之封装</title>
+    <link href="http://liujie2021.github.io/2020/050912244.html"/>
+    <id>http://liujie2021.github.io/2020/050912244.html</id>
+    <published>2020-05-09T02:28:26.000Z</published>
+    <updated>2020-05-09T02:34:41.811Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://liujie2021.github.io/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://liujie2021.github.io/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java面向对象基础</title>
+    <link href="http://liujie2021.github.io/2020/050955062.html"/>
+    <id>http://liujie2021.github.io/2020/050955062.html</id>
+    <published>2020-05-09T02:24:34.000Z</published>
+    <updated>2020-05-09T02:24:34.959Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bilibili测试</title>
+    <link href="http://liujie2021.github.io/2020/05092221.html"/>
+    <id>http://liujie2021.github.io/2020/05092221.html</id>
+    <published>2020-05-08T23:41:16.000Z</published>
+    <updated>2020-05-09T02:19:24.180Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;iframe class=&quot;bilibili&quot; src=&quot;//player.bilibili.com/player.html?aid=81148317room_id=8324350&amp;cid=8324350&amp;state=LIVE&amp;page=1&amp;high_quality=1&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="视频" scheme="http://liujie2021.github.io/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
