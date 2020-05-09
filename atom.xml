@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujie2021.github.io/"/>
-  <updated>2020-05-09T02:34:41.811Z</updated>
+  <updated>2020-05-09T07:16:53.939Z</updated>
   <id>http://liujie2021.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://liujie2021.github.io/2020/050912244.html"/>
     <id>http://liujie2021.github.io/2020/050912244.html</id>
     <published>2020-05-09T02:28:26.000Z</published>
-    <updated>2020-05-09T02:34:41.811Z</updated>
+    <updated>2020-05-09T07:16:53.939Z</updated>
     
     <summary type="html">
     
@@ -40,13 +40,15 @@
     <link href="http://liujie2021.github.io/2020/050955062.html"/>
     <id>http://liujie2021.github.io/2020/050955062.html</id>
     <published>2020-05-09T02:24:34.000Z</published>
-    <updated>2020-05-09T02:24:34.959Z</updated>
+    <updated>2020-05-09T07:17:02.178Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
+    
+      <category term="Java" scheme="http://liujie2021.github.io/tags/Java/"/>
     
   </entry>
   
@@ -55,7 +57,7 @@
     <link href="http://liujie2021.github.io/2020/05092221.html"/>
     <id>http://liujie2021.github.io/2020/05092221.html</id>
     <published>2020-05-08T23:41:16.000Z</published>
-    <updated>2020-05-09T04:33:17.573Z</updated>
+    <updated>2020-05-09T07:16:48.653Z</updated>
     
     <summary type="html">
     
@@ -72,6 +74,42 @@
     
     
       <category term="视频" scheme="http://liujie2021.github.io/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习</title>
+    <link href="http://liujie2021.github.io/2020/050832475.html"/>
+    <id>http://liujie2021.github.io/2020/050832475.html</id>
+    <published>2020-05-08T12:07:12.000Z</published>
+    <updated>2020-05-09T07:08:19.760Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;**Java核心技术**&lt;/center&gt;
+
+
+&lt;br&gt;
+
+
+
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;/medias/videos/1.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java核心技术 卷1 基础知识 原书第10版" scheme="http://liujie2021.github.io/categories/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF-%E5%8D%B71-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%8E%9F%E4%B9%A6%E7%AC%AC10%E7%89%88/"/>
+    
+    
+      <category term="java书籍" scheme="http://liujie2021.github.io/tags/java%E4%B9%A6%E7%B1%8D/"/>
     
   </entry>
   
