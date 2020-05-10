@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>视频测试</title>
+      <link href="/2020/051053177.html"/>
+      <url>/2020/051053177.html</url>
+      
+        <content type="html"><![CDATA[<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/medias/2.mp4","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>怀化学院java考试大纲</title>
       <link href="/2020/050960104.html"/>
       <url>/2020/050960104.html</url>
@@ -77,7 +90,7 @@
       <link href="/2020/05092221.html"/>
       <url>/2020/05092221.html</url>
       
-        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=412935552&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=6028231&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
       
       
       
