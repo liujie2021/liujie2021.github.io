@@ -454,7 +454,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
 </script>
 
 
@@ -706,7 +706,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Java","value":1},{"name":"IDEA教程","value":1},{"name":"日记","value":1},{"name":"java考试大纲","value":1}],
+                data: [{"name":"IDEA教程","value":1},{"name":"日记","value":1},{"name":"Java","value":1},{"name":"java考试大纲","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -730,7 +730,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Java","视频","Java面向对象","java书籍","日记"]
+                data: ["Java","java书籍","日记","Java面向对象","视频"]
             }
         ],
         yAxis: [
@@ -913,18 +913,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/%E8%A7%86%E9%A2%91/">
-                <span class="chip center-align waves-effect waves-light chip-default">视频</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-                <span class="chip center-align waves-effect waves-light chip-default">Java面向对象</span>
-            </a>
-            
-            
-            
             <a href="/tags/java%E4%B9%A6%E7%B1%8D/">
                 <span class="chip center-align waves-effect waves-light chip-default">java书籍</span>
             </a>
@@ -936,6 +924,18 @@
             </a>
             
             
+            
+            
+            
+            <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                <span class="chip center-align waves-effect waves-light chip-default">Java面向对象</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E8%A7%86%E9%A2%91/">
+                <span class="chip center-align waves-effect waves-light chip-default">视频</span>
+            </a>
             
             
         </div>
@@ -1051,7 +1051,7 @@
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2020</span>
+            <span id="year">2019</span>
             <a href="http://liujie2021.github.io" target="_blank">刘杰同学</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -1064,6 +1064,18 @@
             
             
             
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
             <br>
             
             <span id="sitetime">载入运行时间...</span>
@@ -1075,12 +1087,12 @@
                     var days = hours * 24;
                     var years = days * 365;
                     var today = new Date();
-                    var startYear = "2020";
+                    var startYear = "2019";
                     var startMonth = "5";
                     var startDate = "08";
                     var startHour = "12";
-                    var startMinute = "0";
-                    var startSecond = "0";
+                    var startMinute = "1";
+                    var startSecond = "1";
                     var todayYear = today.getFullYear();
                     var todayMonth = today.getMonth() + 1;
                     var todayDate = today.getDate();
@@ -1113,7 +1125,7 @@
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link ">
+        <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/liujie2021" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
@@ -1208,6 +1220,8 @@ $(function () {
     
     <script src="/libs/others/clicklove.js" async="async"></script>
     
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     

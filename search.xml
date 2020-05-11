@@ -33,7 +33,7 @@
       <link href="/2020/051053177.html"/>
       <url>/2020/051053177.html</url>
       
-        <content type="html"><![CDATA[<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/medias/2.mp4","pic":"http://img4.imgtn.bdimg.com/it/u=3227133223,936745533&fm=11&gp=0.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/medias/2.mp4","pic":"http://img3.imgtn.bdimg.com/it/u=3511271154,1536878491&fm=26&gp=0.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
       
@@ -115,7 +115,7 @@
       <link href="/2020/05092221.html"/>
       <url>/2020/05092221.html</url>
       
-        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=6028231&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=6028231&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><hr><p>测试。。。。。。。。。。。。。。。。。。。。。。</p><iframe src="//player.bilibili.com/player.html?aid=10624525&bvid=BV1Hx411v74h&cid=17538084&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="720"> </iframe>]]></content>
       
       
       
