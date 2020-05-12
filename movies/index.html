@@ -1,0 +1,185 @@
+
+
+
+
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="index_files/flex-layout-attribute.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index_files/main.css">
+<link rel="stylesheet" type="text/css" href="index_files/video.css">
+
+<script src="index_files/jquery_002.js"></script>
+<script src="index_files/jquery.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="酷杰的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div class="container--grid home-container" style="min-height: auto;">
+    <div class="container container--header">
+        <h1 class="h1--home-title">
+            <a href="https://mxlcpu.github.io/vipvideo/" target="_blank" rel="noopener"><font color="#D9D919">VIP</font>电影免费看</a>
+            <font size="3" color="#008080">
+                <a href="https://mxlcpu.github.io/" target="_blank" rel="noopener">  POWERED BY LeoMason</a>
+            </font>
+        </h1>
+    </div>
+    
+    <div class="search-wrapper">
+        <form>            
+            <input type="text" id="videoSearchInput">
+            <div class="after"></div>
+            <input type="submit">
+        </form>
+        <h4>&nbsp;</h4>
+        <p>说明:点击放大镜,输入VIP视频网页地址,例如《狂暴巨兽》的网页地址:https://v.qq.com/x/cover/84cu4uxrkzi0e60.html,然后回车稍候即可观看</p>
+    </div>
+    <div class="video-wrapper">
+        <iframe id="videoIframe" src="https://api.sigujx.com/?url=https://v.qq.com/x/cover/84cu4uxrkzi0e60.html" allowfullscreen="" width="" height="" frameborder="0"></iframe>
+    </div>
+    <div class="support-videos">
+        <p>现已支持以下网站视频播放(包含VIP视频)</p>
+        <ul layout="rows" id="MixItUp25A03F">
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.le.com/" target="_blank">
+                    <img src="index_files/letvlogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://v.qq.com/" target="_blank">
+                    <img src="index_files/qqlogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.iqiyi.com/" target="_blank">
+                    <img src="index_files/aqylogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.youku.com/" target="_blank">
+                    <img src="index_files/youkulogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.tudou.com/" target="_blank">
+                    <img src="index_files/tudoulogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.mgtv.com/" target="_blank">
+                    <img src="index_files/hunantvlogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://tv.sohu.com/" target="_blank">
+                    <img src="index_files/sohulogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.kankan.com/" target="_blank">
+                    <img src="index_files/xckk.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.baofeng.com/" target="_blank">
+                    <img src="index_files/bfyy.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.fun.tv/" target="_blank">
+                    <img src="index_files/fxw.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.1905.com/" target="_blank">
+                    <img src="index_files/m1905.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.56.com/" target="_blank">
+                    <img src="index_files/56logo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.yinyuetai.com/" target="_blank">
+                    <img src="index_files/yinyuetailogo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://movie.ku6.com/" target="_blank">
+                    <img src="index_files/ku6logo.png">
+                </a>
+            </li>
+            <li class="mix" style="display: inline-block;" data-bound="">
+                <a href="http://www.pptv.com/" target="_blank">
+                    <img src="index_files/pps.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div style="text-align:center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center">
+            <div class="footer-copyright" style="text-align:center">
+                Copyright By
+                <a href="https://liujie2021.github.io/">酷杰</a>©2020 酷杰的博客.
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<script>
+    var getUrlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(decodeURI(window.location.href));
+        return results && results[1] || 0;
+    };
+    var videoUrl = getUrlParam('url');
+    if (!videoUrl) {
+        videoUrl = 'https://v.qq.com/x/cover/84cu4uxrkzi0e60.html';
+    }
+    $("#videoIframe").attr('src', 'https://api.sigujx.com/?url=' + videoUrl);
+
+    (function () {
+        var s = $('input'),
+            f = $('form'),
+            a = $('.after'),
+            m = $('h4');
+        s.focus(function () {
+            if (f.hasClass('open')) return;
+            f.addClass('in');
+            setTimeout(function () {
+                f.addClass('open');
+                f.removeClass('in');
+            }, 3000);
+        });
+        a.on('click', function (e) {
+            e.preventDefault();
+            if (!f.hasClass('open')) return;
+            s.val('');
+            f.addClass('close');
+            f.removeClass('open');
+            setTimeout(function () {
+                f.removeClass('close');
+            }, 1300);
+        })
+        f.submit(function (e) {
+            e.preventDefault();
+            m.html('正在解析,请耐心等待...').addClass('show');
+            f.addClass('explode');
+            setTimeout(function () {
+                var videoUrl = s.val();
+                $("#videoIframe").attr('src', 'https://api.sigujx.com/?url=' + videoUrl);
+                history.pushState('', '', '?url=' + videoUrl);
+                s.val('');
+                f.removeClass('explode');
+                m.removeClass('show');
+            }, 5000);
+        })
+    }());
+
+</script>
+<!-- 
+<script>
+    var xlm_wid='12206';
+    var xlm_url='https://www.xianliao.me/';
+ </script>
+<script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+--><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":250,"height":350},"mobile":{"show":true},"react":{"opacity":0.9}});</script></body></html>
