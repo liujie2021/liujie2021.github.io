@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujie2021.github.io/"/>
-  <updated>2020-05-15T03:11:06.286Z</updated>
+  <updated>2020-05-15T03:54:05.075Z</updated>
   <id>http://liujie2021.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java面向对象之抽象类</title>
+    <link href="http://liujie2021.github.io/2020/051530465.html"/>
+    <id>http://liujie2021.github.io/2020/051530465.html</id>
+    <published>2020-05-15T03:23:38.000Z</published>
+    <updated>2020-05-15T03:54:05.075Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;抽象类&quot;&gt;&lt;a href=&quot;#抽象类&quot; class=&quot;headerlink&quot; title=&quot;抽象类&quot;&gt;&lt;/a&gt;抽象类&lt;/h1&gt;&lt;h2 id=&quot;1-什么是抽象类？&quot;&gt;&lt;a href=&quot;#1-什么是抽象类？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://liujie2021.github.io/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://liujie2021.github.io/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java面向对象之多态</title>
     <link href="http://liujie2021.github.io/2020/051463643.html"/>
     <id>http://liujie2021.github.io/2020/051463643.html</id>
     <published>2020-05-14T00:50:34.000Z</published>
-    <updated>2020-05-15T03:11:06.286Z</updated>
+    <updated>2020-05-15T03:24:29.972Z</updated>
     
     <summary type="html">
     
@@ -39,7 +66,7 @@
       <category term="Java" scheme="http://liujie2021.github.io/categories/Java/"/>
     
     
-      <category term="java" scheme="http://liujie2021.github.io/tags/java/"/>
+      <category term="Java面向对象" scheme="http://liujie2021.github.io/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
@@ -98,11 +125,11 @@
   </entry>
   
   <entry>
-    <title>视频测试</title>
+    <title>我循着光前进，黑暗不会再那么令人畏惧</title>
     <link href="http://liujie2021.github.io/2020/051053177.html"/>
     <id>http://liujie2021.github.io/2020/051053177.html</id>
     <published>2020-05-10T06:12:27.000Z</published>
-    <updated>2020-05-10T23:44:08.095Z</updated>
+    <updated>2020-05-15T03:58:04.309Z</updated>
     
     <summary type="html">
     
@@ -117,6 +144,8 @@
     </summary>
     
     
+    
+      <category term="视频" scheme="http://liujie2021.github.io/tags/%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
@@ -210,11 +239,11 @@
   </entry>
   
   <entry>
-    <title>bilibili测试</title>
+    <title>b站精选</title>
     <link href="http://liujie2021.github.io/2020/05092221.html"/>
     <id>http://liujie2021.github.io/2020/05092221.html</id>
     <published>2020-05-08T23:41:16.000Z</published>
-    <updated>2020-05-11T00:02:32.965Z</updated>
+    <updated>2020-05-15T03:52:51.764Z</updated>
     
     <summary type="html">
     

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 酷杰的博客,LIUJIE2021">
+    <meta name="keywords" content="java面向对象之抽象类, 酷杰的博客,LIUJIE2021">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 酷杰的博客</title>
+    <title>java面向对象之抽象类 | 酷杰的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -452,12 +452,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img2.imgtn.bdimg.com/it/u=1571967986,1966832376&fm=11&gp=0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">java面向对象之抽象类</h1>
                 </div>
             </div>
         </div>
@@ -573,12 +573,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                                <span class="chip bg-color">Java面向对象</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -587,28 +600,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-08
+                    2020-05-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-10
+                    2020-05-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    80
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -623,15 +636,126 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>  <span class="token punctuation">(</span>简写: hexo n <span class="token string">"新帖子"</span><span class="token punctuation">)</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><h2 id="1-什么是抽象类？"><a href="#1-什么是抽象类？" class="headerlink" title="1.什么是抽象类？"></a>1.什么是抽象类？</h2><p>[Java]语言中，用abstract 关键字来修饰一个类时，这个类叫作抽象类。抽象类是它的所有子类的公共属性的集合，是包含一个或多个抽象方法的类。抽象类可以看作是对类的进一步抽象。在面向对象领域，抽象类主要用来进行类型隐藏</p>
+<h2 id="2-抽象类-amp-抽象方法的定义"><a href="#2-抽象类-amp-抽象方法的定义" class="headerlink" title="2.抽象类&amp;抽象方法的定义"></a>2.抽象类&amp;抽象方法的定义</h2><p>Java抽象类的实现是通过关键字abstract来说明的。其格式为：</p>
+<p><code>抽象类定义的格式</code>：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">abstract</span> <span class="token keyword">class</span> 类名<span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span></code></pre>
+<p><code>抽象方法定义格式</code>：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> 返回值类型 方法名<span class="token punctuation">(</span>参数<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-JAVA"><code class="language-JAVA">例:
+public abstract class Employee
+{
+   private String name;
+   private String address;
+   private int number;
+   public Employee(String name, String address, int number)
+   {
+      System.out.println("Constructing an Employee");
+      this.name = name;
+      this.address = address;
+      this.number = number;
+   }
+   public double computePay()
+   {
+     System.out.println("Inside Employee computePay");
+     return 0.0;
+   }
+   public void mailCheck()
+   {
+      System.out.println("Mailing a check to " + this.name
+       + " " + this.address);
+   }
+   public String toString()
+   {
+      return name + " " + address + " " + number;
+   }
+   public String getName()
+   {
+      return name;
+   }
+   public String getAddress()
+   {
+      return address;
+   }
+   public void setAddress(String newAddress)
+   {
+      address = newAddress;
+   }
+   public int getNumber()
+   {
+     return number;
+   }
+}</code></pre>
+<h2 id="3-抽象类的特点"><a href="#3-抽象类的特点" class="headerlink" title="3.抽象类的特点"></a>3.抽象类的特点</h2><p>抽象类，其修饰符必须为public或者protected，不能是private，因为创建抽象类，就是要被其他类继承，用private修饰了，则不能被子类继承，子类便无法实现该方法。抽象类不能用来创建对象，即抽象类不能被直接实例化，要通过其普通子类进行实例化。如果一个普通子类继承于一个抽象父类，则该类一定要重写实现该父类的抽象方法。如果该子类仍然是一个抽象类，这也是允许的，就不必重写实现该父类的抽象方法，但必须用abstract修饰。抽象级别：抽象类是对整体类的抽象，包含属性和方法。实现类的范围不同：抽象类，其实是从子类中提取共性部分，然后抽象出来，反之，子类继承该父类就可以了，也就是说里面的抽象方法一般来自同一个类别。设计方式不同：抽象类是要先有子类，然后才抽象出父类，是一种从下往上的构建法则。</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>1、凡是用abstract修饰符修饰的类被称为抽象类。凡是用abstract修饰符修饰的方法称为抽象方法。</p>
+<p>2、抽象类中可以有零个或多个抽象方法，也可以包含非抽象的方法。·抽象类中可以没有抽象方法，但是，有抽象方法的类必须是抽象类</p>
+<p>3、抽象类不能创建对象，创建对象的工作由抽象类派生的子类来实现</p>
+<p>4、如果父类中已有同名的abstract方法，则子类中就不能再有同名的抽象方法</p>
+<p>5、abstract不能与final并列修饰同一个类</p>
+<p>6、abstract 不能与private、static、final或native并列修饰同一个方法</p>
+<p>抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能</p>
+<h2 id="4-继承抽象类"><a href="#4-继承抽象类" class="headerlink" title="4.继承抽象类"></a>4.继承抽象类</h2><p>我们能通过一般的方法继承Employee类</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/* 文件名 : Salary.java */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Salary</span> <span class="token keyword">extends</span> <span class="token class-name">Employee</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">private</span> <span class="token keyword">double</span> salary<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Annual salary</span>
+   <span class="token keyword">public</span> <span class="token function">Salary</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> String address<span class="token punctuation">,</span> <span class="token keyword">int</span> number<span class="token punctuation">,</span> <span class="token keyword">double</span>
+      salary<span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+       <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> address<span class="token punctuation">,</span> number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token function">setSalary</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Within mailCheck of Salary class "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Mailing check to "</span> <span class="token operator">+</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+       <span class="token operator">+</span> <span class="token string">" with salary "</span> <span class="token operator">+</span> salary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getSalary</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> salary<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSalary</span><span class="token punctuation">(</span><span class="token keyword">double</span> newSalary<span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+       <span class="token keyword">if</span><span class="token punctuation">(</span>newSalary <span class="token operator">>=</span> <span class="token number">0.0</span><span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+          salary <span class="token operator">=</span> newSalary<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">computePay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Computing salary pay for "</span> <span class="token operator">+</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> salary<span class="token operator">/</span><span class="token number">52</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承 7 个成员方法，且通过该方法可以设置或获取三个成员变量。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/* 文件名 : AbstractDemo.java */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AbstractDemo</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String <span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+      Salary s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Salary</span><span class="token punctuation">(</span><span class="token string">"Mohd Mohtashim"</span><span class="token punctuation">,</span> <span class="token string">"Ambehta, UP"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3600.00</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Employee e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Salary</span><span class="token punctuation">(</span><span class="token string">"John Adams"</span><span class="token punctuation">,</span> <span class="token string">"Boston, MA"</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2400.00</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Call mailCheck using Salary reference --"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      s<span class="token punctuation">.</span><span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"\n Call mailCheck using Employee reference--"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      e<span class="token punctuation">.</span><span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>以上程序编译运行结果如下：</p>
+<pre class=" language-java"><code class="language-java">Constructing an Employee
+Constructing an Employee
+Call mailCheck using  Salary reference <span class="token operator">--</span>
+Within mailCheck of Salary <span class="token keyword">class</span>
+<span class="token class-name">Mailing</span> check to Mohd Mohtashim with salary <span class="token number">3600.0</span>
+
+Call mailCheck using Employee reference<span class="token operator">--</span>
+Within mailCheck of Salary <span class="token keyword">class</span>
+<span class="token class-name">Mailing</span> check to John Adams with salary <span class="token number">2400</span><span class="token punctuation">.</span></code></pre>
 
             </div>
             <hr/>
@@ -647,7 +771,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">刘杰同学</a>
+                    <a href="/about" rel="external nofollow noreferrer">刘杰</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -657,7 +781,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://liujie2021.github.io/2020/050816107.html">http://liujie2021.github.io/2020/050816107.html</a>
+                    <a href="http://liujie2021.github.io/2020/051530465.html">http://liujie2021.github.io/2020/051530465.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -670,7 +794,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">刘杰同学</a>
+                    <a href="/about" target="_blank">刘杰</a>
                     !
                 </span>
             </div>
@@ -694,7 +818,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                                    <span class="chip bg-color">Java面向对象</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -870,7 +998,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-05-08T10-00-49',
+        id: '2020-05-15T11-23-38',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -894,62 +1022,47 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/050832475.html">
+                <a href="/2020/051530465.html">
                     <div class="card-image">
                         
+                        <img src="http://img2.imgtn.bdimg.com/it/u=1571967986,1966832376&fm=11&gp=0.jpg" class="responsive-img" alt="java面向对象之抽象类">
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="java学习">
-                        
-                        <span class="card-title">java学习</span>
+                        <span class="card-title">java面向对象之抽象类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            IDEA教程
-
-
-
-
-
-
-
-	
-    
-	
-
-
- 
-
-
-
+                            抽象类1.什么是抽象类？[Java]语言中，用abstract 关键字来修饰一个类时，这个类叫作抽象类。抽象类是它的所有子类的公共属性的集合，是包含一个或多个抽象方法的类。抽象类可以看作是对类的进一步抽象。在面向对象领域，抽象类主要用来进行
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/IDEA%E6%95%99%E7%A8%8B/" class="post-category">
-                                    IDEA教程
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java%E4%B9%A6%E7%B1%8D/">
-                        <span class="chip bg-color">java书籍</span>
+                    <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">Java面向对象</span>
                     </a>
                     
                 </div>
@@ -960,37 +1073,51 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/050816107.html">
+                <a href="/2020/051463643.html">
                     <div class="card-image">
                         
+                        <img src="http://pic1.win4000.com/wallpaper/d/58c0f8ac9a061.jpg" class="responsive-img" alt="java面向对象之多态">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">java面向对象之多态</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            一.Java面向对象之多态1.多态的概念多态是同一个行为具有多个不同表现形式或形态的能力
+例:  Animal a= new Cat();
+
+public class Test {
+    public static void main(S
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            刘杰同学
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">Java面向对象</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1028,8 +1155,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 <div class="info-break-policy">
     
-    <i class="fa fa-pencil"></i> 作者: 刘杰同学
-    
+        <i class="fa fa-pencil"></i> 作者: 刘杰
+     
 </div>
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">

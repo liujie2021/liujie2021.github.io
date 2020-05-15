@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>java面向对象之抽象类</title>
+      <link href="/2020/051530465.html"/>
+      <url>/2020/051530465.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><h2 id="1-什么是抽象类？"><a href="#1-什么是抽象类？" class="headerlink" title="1.什么是抽象类？"></a>1.什么是抽象类？</h2><p>[Java]语言中，用abstract 关键字来修饰一个类时，这个类叫作抽象类。抽象类是它的所有子类的公共属性的集合，是包含一个或多个抽象方法的类。抽象类可以看作是对类的进一步抽象。在面向对象领域，抽象类主要用来进行类型隐藏</p><h2 id="2-抽象类-amp-抽象方法的定义"><a href="#2-抽象类-amp-抽象方法的定义" class="headerlink" title="2.抽象类&amp;抽象方法的定义"></a>2.抽象类&amp;抽象方法的定义</h2><p>Java抽象类的实现是通过关键字abstract来说明的。其格式为：</p><p><code>抽象类定义的格式</code>：</p><pre class=" language-java"><code class="language-java"><span class="token keyword">abstract</span> <span class="token keyword">class</span> 类名<span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre><p><code>抽象方法定义格式</code>：</p><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> 返回值类型 方法名<span class="token punctuation">(</span>参数<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><pre class=" language-JAVA"><code class="language-JAVA">例:public abstract class Employee{   private String name;   private String address;   private int number;   public Employee(String name, String address, int number)   {      System.out.println("Constructing an Employee");      this.name = name;      this.address = address;      this.number = number;   }   public double computePay()   {     System.out.println("Inside Employee computePay");     return 0.0;   }   public void mailCheck()   {      System.out.println("Mailing a check to " + this.name       + " " + this.address);   }   public String toString()   {      return name + " " + address + " " + number;   }   public String getName()   {      return name;   }   public String getAddress()   {      return address;   }   public void setAddress(String newAddress)   {      address = newAddress;   }   public int getNumber()   {     return number;   }}</code></pre><h2 id="3-抽象类的特点"><a href="#3-抽象类的特点" class="headerlink" title="3.抽象类的特点"></a>3.抽象类的特点</h2><p>抽象类，其修饰符必须为public或者protected，不能是private，因为创建抽象类，就是要被其他类继承，用private修饰了，则不能被子类继承，子类便无法实现该方法。抽象类不能用来创建对象，即抽象类不能被直接实例化，要通过其普通子类进行实例化。如果一个普通子类继承于一个抽象父类，则该类一定要重写实现该父类的抽象方法。如果该子类仍然是一个抽象类，这也是允许的，就不必重写实现该父类的抽象方法，但必须用abstract修饰。抽象级别：抽象类是对整体类的抽象，包含属性和方法。实现类的范围不同：抽象类，其实是从子类中提取共性部分，然后抽象出来，反之，子类继承该父类就可以了，也就是说里面的抽象方法一般来自同一个类别。设计方式不同：抽象类是要先有子类，然后才抽象出父类，是一种从下往上的构建法则。</p><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>1、凡是用abstract修饰符修饰的类被称为抽象类。凡是用abstract修饰符修饰的方法称为抽象方法。</p><p>2、抽象类中可以有零个或多个抽象方法，也可以包含非抽象的方法。·抽象类中可以没有抽象方法，但是，有抽象方法的类必须是抽象类</p><p>3、抽象类不能创建对象，创建对象的工作由抽象类派生的子类来实现</p><p>4、如果父类中已有同名的abstract方法，则子类中就不能再有同名的抽象方法</p><p>5、abstract不能与final并列修饰同一个类</p><p>6、abstract 不能与private、static、final或native并列修饰同一个方法</p><p>抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能</p><h2 id="4-继承抽象类"><a href="#4-继承抽象类" class="headerlink" title="4.继承抽象类"></a>4.继承抽象类</h2><p>我们能通过一般的方法继承Employee类</p><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/* 文件名 : Salary.java */</span><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Salary</span> <span class="token keyword">extends</span> <span class="token class-name">Employee</span><span class="token punctuation">{</span>   <span class="token keyword">private</span> <span class="token keyword">double</span> salary<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Annual salary</span>   <span class="token keyword">public</span> <span class="token function">Salary</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> String address<span class="token punctuation">,</span> <span class="token keyword">int</span> number<span class="token punctuation">,</span> <span class="token keyword">double</span>      salary<span class="token punctuation">)</span>   <span class="token punctuation">{</span>       <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> address<span class="token punctuation">,</span> number<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token function">setSalary</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token punctuation">}</span>   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token punctuation">{</span>       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Within mailCheck of Salary class "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Mailing check to "</span> <span class="token operator">+</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token operator">+</span> <span class="token string">" with salary "</span> <span class="token operator">+</span> salary<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token punctuation">}</span>   <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getSalary</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token punctuation">{</span>       <span class="token keyword">return</span> salary<span class="token punctuation">;</span>   <span class="token punctuation">}</span>   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSalary</span><span class="token punctuation">(</span><span class="token keyword">double</span> newSalary<span class="token punctuation">)</span>   <span class="token punctuation">{</span>       <span class="token keyword">if</span><span class="token punctuation">(</span>newSalary <span class="token operator">>=</span> <span class="token number">0.0</span><span class="token punctuation">)</span>       <span class="token punctuation">{</span>          salary <span class="token operator">=</span> newSalary<span class="token punctuation">;</span>       <span class="token punctuation">}</span>   <span class="token punctuation">}</span>   <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">computePay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token punctuation">{</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Computing salary pay for "</span> <span class="token operator">+</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token keyword">return</span> salary<span class="token operator">/</span><span class="token number">52</span><span class="token punctuation">;</span>   <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承 7 个成员方法，且通过该方法可以设置或获取三个成员变量。</p><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/* 文件名 : AbstractDemo.java */</span><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AbstractDemo</span><span class="token punctuation">{</span>   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String <span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>   <span class="token punctuation">{</span>      Salary s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Salary</span><span class="token punctuation">(</span><span class="token string">"Mohd Mohtashim"</span><span class="token punctuation">,</span> <span class="token string">"Ambehta, UP"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3600.00</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      Employee e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Salary</span><span class="token punctuation">(</span><span class="token string">"John Adams"</span><span class="token punctuation">,</span> <span class="token string">"Boston, MA"</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2400.00</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Call mailCheck using Salary reference --"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      s<span class="token punctuation">.</span><span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"\n Call mailCheck using Employee reference--"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      e<span class="token punctuation">.</span><span class="token function">mailCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>以上程序编译运行结果如下：</p><pre class=" language-java"><code class="language-java">Constructing an EmployeeConstructing an EmployeeCall mailCheck using  Salary reference <span class="token operator">--</span>Within mailCheck of Salary <span class="token keyword">class</span><span class="token class-name">Mailing</span> check to Mohd Mohtashim with salary <span class="token number">3600.0</span>Call mailCheck using Employee reference<span class="token operator">--</span>Within mailCheck of Salary <span class="token keyword">class</span><span class="token class-name">Mailing</span> check to John Adams with salary <span class="token number">2400</span><span class="token punctuation">.</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java面向对象 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java面向对象之多态</title>
       <link href="/2020/051463643.html"/>
       <url>/2020/051463643.html</url>
@@ -20,7 +45,7 @@
       
         <tags>
             
-            <tag> java </tag>
+            <tag> Java面向对象 </tag>
             
         </tags>
       
@@ -79,13 +104,19 @@
     
     
     <entry>
-      <title>视频测试</title>
+      <title>我循着光前进，黑暗不会再那么令人畏惧</title>
       <link href="/2020/051053177.html"/>
       <url>/2020/051053177.html</url>
       
         <content type="html"><![CDATA[<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/medias/2.mp4","pic":"http://img3.imgtn.bdimg.com/it/u=3511271154,1536878491&fm=26&gp=0.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -161,11 +192,11 @@
     
     
     <entry>
-      <title>bilibili测试</title>
+      <title>b站精选</title>
       <link href="/2020/05092221.html"/>
       <url>/2020/05092221.html</url>
       
-        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=6028231&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><hr><p>测试。。。。。。。。。。。。。。。。。。。。。。</p><iframe src="//player.bilibili.com/player.html?aid=10624525&bvid=BV1Hx411v74h&cid=17538084&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="720"> </iframe>]]></content>
+        <content type="html"><![CDATA[<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=6028231&bvid=BV1FV411d7u7&cid=186803402&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><hr><p>奔涌吧后浪</p><p>弱小的人，才习惯嘲讽与否定。内心强大的人，从不吝啬赞美与鼓励</p><iframe src="//player.bilibili.com/player.html?aid=10624525&bvid=BV1Hx411v74h&cid=17538084&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="720"> </iframe>]]></content>
       
       
       
