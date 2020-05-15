@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="怀化学院java考试大纲, 酷杰的博客,LIUJIE2021">
+    <meta name="keywords" content="java面向对象之继承, 酷杰的博客,LIUJIE2021">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>怀化学院java考试大纲 | 酷杰的博客</title>
+    <title>java面向对象之继承 | 酷杰的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -452,12 +452,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io/img/Butterfly/007.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">怀化学院java考试大纲</h1>
+                    <h1 class="description center-align post-title">java面向对象之继承</h1>
                 </div>
             </div>
         </div>
@@ -575,8 +575,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                                <span class="chip bg-color">Java面向对象</span>
                             </a>
                         
                     </div>
@@ -587,8 +587,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/java%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" class="post-category">
-                                java考试大纲
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -600,28 +600,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-09
+                    2020-05-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-09
+                    2020-05-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -636,23 +636,116 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <center>怀化学院java考试大纲</center>
+                <h2 id="继承的概念"><a href="#继承的概念" class="headerlink" title="继承的概念"></a>继承的概念</h2><p>继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为</p>
+<h2 id="继承的语法"><a href="#继承的语法" class="headerlink" title="继承的语法"></a>继承的语法</h2><pre class=" language-java"><code class="language-java">语法：<span class="token punctuation">[</span>访问权限<span class="token punctuation">]</span> <span class="token keyword">class</span> 子类名 <span class="token keyword">extends</span> 父类名<span class="token punctuation">{</span>
+　　类体定义；
+<span class="token punctuation">}</span>
 
 
-<br>
+例如<span class="token operator">:</span> 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Dog</span><span class="token punctuation">{</span>
+<span class="token keyword">private</span> String name<span class="token punctuation">;</span>
+<span class="token keyword">private</span> String sex<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>“吃饭”<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HomeDog</span> <span class="token keyword">extends</span> <span class="token class-name">Dog</span><span class="token punctuation">{</span>
+　　<span class="token comment" spellcheck="true">//类的定义</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HuskyDog</span> <span class="token keyword">extends</span> <span class="token class-name">Dog</span><span class="token punctuation">{</span>
+　　<span class="token comment" spellcheck="true">//类的定义</span>
+<span class="token punctuation">}</span>
 
+<span class="token keyword">protected</span>（受保护的访问权限修饰符，用于修饰属性和方法，使用<span class="token keyword">protected</span>修饰的属性和方法可以被子类继承）</code></pre>
+<h2 id="继承关键字"><a href="#继承关键字" class="headerlink" title="继承关键字"></a>继承关键字</h2><p>继承可以使用 extends 和 implements 这两个关键字来实现继承，而且所有的类都是继承于 java.lang.Object，当一个类没有继承的两个关键字，则默认继承object（这个类在 <strong>java.lang</strong> 包中，所以不需要 <strong>import</strong>）祖先类</p>
+<blockquote>
+<p><code>extends</code>在 Java 中，类的继承是单一继承，也就是说，一个子类只能拥有一个父类，所以 extends 只能继承一个类</p>
+</blockquote>
+<pre class=" language-java"><code class="language-java">`<span class="token keyword">extends</span>`实例<span class="token operator">:</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span> 
+    <span class="token keyword">private</span> String name<span class="token punctuation">;</span>   
+    <span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span> 
+    <span class="token keyword">public</span> <span class="token function">Animal</span><span class="token punctuation">(</span>String myName<span class="token punctuation">,</span> String myid<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        <span class="token comment" spellcheck="true">//初始化属性值</span>
+    <span class="token punctuation">}</span> 
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//吃东西方法的具体实现  } </span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//睡觉方法的具体实现  } </span>
+<span class="token punctuation">}</span> 
 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Penguin</span>  <span class="token keyword">extends</span>  <span class="token class-name">Animal</span><span class="token punctuation">{</span> 
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p><code>implements</code> 使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）</p>
+</blockquote>
+<pre class=" language-java"><code class="language-java">`<span class="token keyword">implements</span>`实例<span class="token operator">:</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">B</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-	<div class="row">
-    <embed src="/medias/videos/2.pdf" width="100%" height="550" type="application/pdf">
-	</div>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token keyword">implements</span> <span class="token class-name">A</span><span class="token punctuation">,</span>B <span class="token punctuation">{</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="super-与-this-关键字"><a href="#super-与-this-关键字" class="headerlink" title="super 与 this 关键字"></a>super 与 this 关键字</h2><p>super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。</p>
+<p>this关键字：指向的是当前对象的引用</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">this</span>关键字指向的是当前对象的引用
+调用类中的属性：<span class="token keyword">this</span><span class="token punctuation">.</span>属性名称，指的是访问类中的成员变量，用来区分成员变量和局部变量（重名问题）
+调用类中的方法：<span class="token keyword">this</span><span class="token punctuation">.</span>方法名称，用来访问本类的成员方法
+调用类构造方法：<span class="token keyword">this</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>访问本类的构造方法，<span class="token punctuation">(</span><span class="token punctuation">)</span>中可以有参数的 如果有参数 就是调用指定的有参构造
+注意：
+<span class="token number">1</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 不能使用在普通方法中，只能写在构造方法中
+<span class="token number">2</span><span class="token punctuation">.</span>必须是构造方法中的第一条语句
+</code></pre>
+<pre class=" language-java"><code class="language-java">可以理解为对父类的引用，使用<span class="token keyword">super</span>来调用父类的属性，方法，和构造方法
+<span class="token keyword">super</span>可以完成以下的操作：
+a、使用<span class="token keyword">super</span>调用父类中的属性，可以从父类实例处获得信息。
+b、使用<span class="token keyword">super</span>调用父类中的方法，可以委托父类对象帮助完成某件事情。
+c、使用<span class="token keyword">super</span>调用父类中的构造方法（<span class="token keyword">super</span><span class="token punctuation">(</span>实参<span class="token punctuation">)</span>形式），必须在子类构造方法的第一条语句，调用父类中相应的构造方法，若不显示的写出来，默认调用父类的无参构造方法，比如：<span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-JAVA"><code class="language-JAVA">实例:
 
+class Animal {
+  void eat() {
+    System.out.println("animal : eat");
+  }
+}
 
- 
+class Dog extends Animal {
+  void eat() {
+    System.out.println("dog : eat");
+  }
+  void eatTest() {
+    this.eat();   // this 调用自己的方法
+    super.eat();  // super 调用父类方法
+  }
+}
 
+public class Test {
+  public static void main(String[] args) {
+    Animal a = new Animal();
+    a.eat();
+    Dog d = new Dog();
+    d.eatTest();
+  }
+}</code></pre>
+<h2 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a><strong>final关键字</strong></h2><p>在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。下面就从这三个方面来了解一下final关键字的基本用法</p>
+<p>final 关键字声明类可以把类定义为不能继承的，即最终类；或者用于修饰方法，该方法不能被子类重写</p>
+<ul>
+<li>声明类：</li>
+</ul>
+<pre class=" language-java"><code class="language-java">当用<span class="token keyword">final</span>修饰一个类时，表明这个类不能被继承。也就是说，如果一个类你永远不会让他被继承，就可以用<span class="token keyword">final</span>进行修饰。<span class="token keyword">final</span>类中的成员变量可以根据需要设为<span class="token keyword">final</span>，但是要注意<span class="token keyword">final</span>类中的所有成员方法都会被隐式地指定为<span class="token keyword">final</span>方法
 
-<br>
+<span class="token keyword">final</span> <span class="token keyword">class</span> 类名 <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//类体</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>声明方法：</li>
+</ul>
+<pre class=" language-java"><code class="language-java">修饰符<span class="token punctuation">(</span><span class="token keyword">public</span><span class="token operator">/</span><span class="token keyword">private</span><span class="token operator">/</span><span class="token keyword">default</span><span class="token operator">/</span><span class="token keyword">protected</span><span class="token punctuation">)</span> <span class="token keyword">final</span> 返回值类型 方法名<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//方法体</span>
+<span class="token punctuation">}</span></code></pre>
+
             </div>
             <hr/>
 
@@ -677,7 +770,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://liujie2021.github.io/2020/050960104.html">http://liujie2021.github.io/2020/050960104.html</a>
+                    <a href="http://liujie2021.github.io/2020/051462597.html">http://liujie2021.github.io/2020/051462597.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -715,8 +808,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                                    <span class="chip bg-color">Java面向对象</span>
                                 </a>
                             
                         </div>
@@ -894,7 +987,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-05-09T16-23-36',
+        id: '2020-05-14T08-49-46',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -922,64 +1015,28 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/051053177.html">
+                <a href="/2020/051463643.html">
                     <div class="card-image">
                         
+                        <img src="http://pic1.win4000.com/wallpaper/d/58c0f8ac9a061.jpg" class="responsive-img" alt="java面向对象之多态">
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="视频测试">
-                        
-                        <span class="card-title">视频测试</span>
+                        <span class="card-title">java面向对象之多态</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"vid
+                            一.Java面向对象之多态1.多态的概念多态是同一个行为具有多个不同表现形式或形态的能力
+例:  Animal a= new Cat();
+
+public class Test {
+    public static void main(S
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            刘杰同学
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/050912244.html">
-                    <div class="card-image">
-                        
-                        <img src="http://img0.imgtn.bdimg.com/it/u=314609656,952795838&fm=26&gp=0.jpg" class="responsive-img" alt="java面向对象之封装">
-                        
-                        <span class="card-title">java面向对象之封装</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Java封装
-在面向对象程式设计方法中，封装（Encapsulation）是指一种将抽象性函式接口的实现细节部分包装、隐藏起来的方法。
-封装可以被认为是一个保护屏障，防止该类的代码和数据被外部类定义的代码随机访问。
-要访问该类的代码和数据，
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-09
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -995,8 +1052,56 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-                        <span class="chip bg-color">Java面向对象</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/051039021.html">
+                    <div class="card-image">
+                        
+                        <img src="http://img.sccnn.com/bimg/337/47056.jpg" class="responsive-img" alt="你好自己">
+                        
+                        <span class="card-title">你好自己</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你好自己你好自己:​                            也许这只是一个博客里的一篇日记帖子,在多年以后你会忘却这个’开始’,但你心中的那一团火并不会随之熄灭,你可是花了不少时间去建设这个’酷杰博客’的呀,个中辛苦只有自己
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A5%E8%AE%B0/" class="post-category">
+                                    日记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%97%A5%E8%AE%B0/">
+                        <span class="chip bg-color">日记</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liujie2021.github.io/"/>
-  <updated>2020-05-10T23:41:04.855Z</updated>
+  <updated>2020-05-15T03:11:06.286Z</updated>
   <id>http://liujie2021.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java面向对象之多态</title>
+    <link href="http://liujie2021.github.io/2020/051463643.html"/>
+    <id>http://liujie2021.github.io/2020/051463643.html</id>
+    <published>2020-05-14T00:50:34.000Z</published>
+    <updated>2020-05-15T03:11:06.286Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一-Java面向对象之多态&quot;&gt;&lt;a href=&quot;#一-Java面向对象之多态&quot; class=&quot;headerlink&quot; title=&quot;一.Java面向对象之多态&quot;&gt;&lt;/a&gt;一.Java面向对象之多态&lt;/h1&gt;&lt;h2 id=&quot;1-多态的概念&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://liujie2021.github.io/categories/Java/"/>
+    
+    
+      <category term="java" scheme="http://liujie2021.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java面向对象之继承</title>
+    <link href="http://liujie2021.github.io/2020/051462597.html"/>
+    <id>http://liujie2021.github.io/2020/051462597.html</id>
+    <published>2020-05-14T00:49:46.000Z</published>
+    <updated>2020-05-14T06:55:57.602Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;继承的概念&quot;&gt;&lt;a href=&quot;#继承的概念&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://liujie2021.github.io/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://liujie2021.github.io/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>你好自己</title>
